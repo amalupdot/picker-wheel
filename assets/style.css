@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  background-color: #e6e6e6;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.wheel-section {
+  text-align: center;
+  margin-right: 20px;
+}
+
+#wheel {
+  border: 4px solid #333;
+  border-radius: 50%;
+}
+
+.wheel-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+#spin-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: #333;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-align: center;
+}
+
+#spin-button .button-label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#spin-button .instruction {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.input-section {
+  width: 300px;
+  padding-left: 150px;
+}
+
+.input-section h2 {
+  text-align: center;
+}
+
+#option-input {
+  width: calc(100% - 40px);
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#add-option {
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#options-list {
+  list-style: none;
+  padding: 0;
+}
+
+#options-list li {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#options-list li span {
+  flex-grow: 1;
+}
+
+.pointer::before {
+  content: '';
+  top: -12px;
+  position: absolute;
+  bottom: -20px; 
+  left: 50%;
+  transform: rotate(-54deg);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 10px 0 10px; 
+  border-color: #333 transparent transparent transparent;
+}
